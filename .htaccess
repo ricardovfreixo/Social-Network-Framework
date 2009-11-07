@@ -1,0 +1,20 @@
+Satisfy Any
+Order Deny,Allow
+Allow from all
+
+# ter a certeza que o rewrite esta ligado
+RewriteEngine On
+
+# a dir onde esta o CI a correr. comentar se estiver na raiz
+RewriteBase /framework/
+
+# Protege a dir application e system
+RewriteRule ^(application|system|uploads) - [F,L]
+
+# redireciona para o index.php apenas se não existir na raiz. Assim podem-se
+# criar outras dirs na raiz como css ou js sem ter de editar nada
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# tudo o resto vai contra o index.php
+RewriteRule .* index.php/$0 [PT,L]
