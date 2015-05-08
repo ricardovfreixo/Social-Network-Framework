@@ -252,6 +252,7 @@ switch (ENVIRONMENT)
 		define('APPPATH', BASEPATH.$application_folder.DIRECTORY_SEPARATOR);
 	}
 
+
 	// The path to the "views" folder
 	if ( ! is_dir($view_folder))
 	{
