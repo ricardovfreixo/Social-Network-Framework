@@ -21,4 +21,8 @@ pretty much anyone can help.
 Also donations would be great. Hosting, a domain, etc. Anything would help actually.
 
 ## History
-(06May2015) Resuming this long forgotten project. Upgrading CI to version 3, including a wee bit of composer and let's see what this lead to
+|---|---|
+|date|change|
+|---|---|
+|(06May2015)|Resuming this long forgotten project. Upgrading CI to version 3, including a wee bit of composer and let's see what this lead to|
+|---|---|
